@@ -1,0 +1,35 @@
+{
+  "name": "vflower",
+  "version": "1.0.0",
+  "description": "Un bot de discord para escuchar música",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file .env .",
+    "dev": "nodemon --env-file .env .",
+    "debug": "nodemon --env-file .env --inspect .",
+    "dev-upload": "node --env-file .env ./utilities/uploader.js dev",
+    "global-upload": "node --env-file .env ./utilities/uploader.js global"
+  },
+  "keywords": [
+    "discord-bot",
+    "music-bot"
+  ],
+  "author": "Missing Glitch",
+  "license": "MIT",
+  "dependencies": {
+    "@discord-player/extractor": "^4.5.1",
+    "discord-player": "^6.7.1",
+    "discord-player-youtubei": "^1.3.3",
+    "discord.js": "^14.16.3",
+    "ffmpeg-static": "^5.2.0",
+    "mediaplex": "^0.0.9",
+    "winston": "^3.15.0",
+    "youtubei.js": "^11.0.1"
+  },
+  "devDependencies": {
+    "https-proxy-agent": "^7.0.5",
+    "nodemon": "^3.1.7",
+    "socks-proxy-agent": "^8.0.4",
+    "undici": "^6.20.1"
+  }
+}
